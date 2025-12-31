@@ -58,10 +58,11 @@ export function middleware(req: NextRequest, res: NextResponse) {
 export const config = {
   matcher: [
     "/login",
-    "/reporting/:path*",
-    "/store-settings/:path*",
-    "/employee-management/:path*",
-    "/menu-maintenance/:path*",
-    "/help-center/:path*",
+    "/personal-management/:path*",
+    "/record/:path*",
+    "/schedule-management/:path*",
+    "/team-board/:path*",
+    "/team-overview/:path*",
+    "/users/:path*",
   ],
 };
