@@ -66,7 +66,7 @@ export default function Navbar() {
     function directToLoginPage() {
       if (pathname === "/") {
         if (localStorage.getItem("token") != "") {
-          router.push("/store-settings/company-info");
+          router.push("/team-overview");
         } else {
           router.push("/login");
         }
@@ -197,7 +197,7 @@ export default function Navbar() {
         <div className="flex flex-col gap-8">
           <div className="flex justify-between xl:justify-center items-center">
             <Link
-              href={"/store-settings/company-info"}
+              href={"/team-overview"}
               className="flex gap-2 justify-center items-center text-hs-sidebar-hover text-xl font-bold"
             >
               <Image priority src={IconLogoTitle} width={240} alt="壘球黑狗"></Image>
