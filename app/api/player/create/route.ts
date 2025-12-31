@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
-import { createPlayer, IPlayer, updatePlayer } from "../../model/mongo/Player";
+import { createPlayer, IPlayer } from "../../model/mongo/player";
 
 export async function POST(req: Request) {
   try {

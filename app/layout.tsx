@@ -8,7 +8,7 @@ import React from "react";
 const inter = Inter({ subsets: ["latin"] });
 export const dynamic = 'force-dynamic'
 export const metadata: Metadata = {
-  title: "壘球黑狗 v0.0.1",
+  title: "壘球黑狗球隊管理 v1.0.0",
   description: "球隊管理網站",
 };
 
