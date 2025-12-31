@@ -1,0 +1,8 @@
+---
+version: "3"
+services:
+  hotsauce-backoffice:
+    build: ./
+    working_dir: /usr/share/nginx/html
+    ports:
+      - "80:80"
