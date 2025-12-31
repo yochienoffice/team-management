@@ -57,7 +57,7 @@ export function EditScheduleSheet({
 
       if (error) {
         toast({
-          title: "Error",
+          title: "錯誤",
           description: error as string,
         });
         return;
@@ -66,7 +66,7 @@ export function EditScheduleSheet({
       form.reset();
       props.onOpenChange?.(false);
       toast({
-        title: "Success",
+        title: "成功",
         description: "賽程更新成功!",
       });
     });

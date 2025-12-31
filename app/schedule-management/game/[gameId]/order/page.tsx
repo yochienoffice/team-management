@@ -104,14 +104,14 @@ export default function LineupPage() {
 
       if (error) {
         toast({
-          title: "Error",
+          title: "錯誤",
           description: error as string,
         });
         return;
       }
       toast({
-        title: "Success",
-        description: "Member Updated!",
+        title: "成功",
+        description: "攻守名單已更新！",
       });
       router.push(`/schedule-management/game`);
     });

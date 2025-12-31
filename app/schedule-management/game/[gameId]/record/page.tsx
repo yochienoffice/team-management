@@ -74,14 +74,14 @@ export default function LineupPage() {
 
       if (error) {
         toast({
-          title: "Error",
+          title: "錯誤",
           description: error as string,
         });
         return;
       }
       toast({
-        title: "Success",
-        description: "Member Updated!",
+        title: "成功",
+        description: "比賽記錄已更新！",
       });
     });
   };

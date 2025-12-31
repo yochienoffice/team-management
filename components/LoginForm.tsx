@@ -64,6 +64,11 @@ export function LoginForm() {
       //   encryptedData
       // );
 
+      toast({
+        title: "登入成功",
+        description: "即將前往球隊總覽頁面...",
+      });
+
       router.push("/team-overview");
       // if (response == null) {
       //   toast({
@@ -89,7 +94,9 @@ export function LoginForm() {
   return (
     <Card className="p-8 xl:mr-70">
       <CardHeader>
-        <h1 className="text-2xl font-semibold text-hs-sidebar-hover">Hotsauce User Management</h1>
+        <h1 className="text-2xl font-semibold text-hs-sidebar-hover">
+          壘球黑狗球隊管理
+        </h1>
       </CardHeader>
       <CardContent>
         <Form {...loginForm}>
@@ -102,7 +109,7 @@ export function LoginForm() {
               control={loginForm.control}
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email</FormLabel>
+                  <FormLabel>使用者名稱</FormLabel>
                   <Input
                     {...field}
                     type="email"
@@ -116,14 +123,14 @@ export function LoginForm() {
               control={loginForm.control}
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Password</FormLabel>
+                  <FormLabel>密碼</FormLabel>
                   <Input {...field} type="password" placeholder="********" />
                 </FormItem>
               )}
             />
             <div className="flex justify-center">
               <Button type="submit" className="w-full">
-                Login
+                登入
               </Button>
             </div>
           </form>

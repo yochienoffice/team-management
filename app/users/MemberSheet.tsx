@@ -67,7 +67,7 @@ export function MemberSheet({ member, ...props }: UpdateMemberSheetProps) {
 
       if (error) {
         toast({
-          title: "Error",
+          title: "錯誤",
           description: error as string,
         });
         return;
@@ -76,8 +76,8 @@ export function MemberSheet({ member, ...props }: UpdateMemberSheetProps) {
       form.reset();
       props.onOpenChange?.(false);
       toast({
-        title: "Success",
-        description: "Member Updated!",
+        title: "成功",
+        description: "球員資料已更新！",
       });
     });
   }

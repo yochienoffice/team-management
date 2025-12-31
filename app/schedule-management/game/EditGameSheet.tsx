@@ -85,7 +85,7 @@ export function EditGameSheet({
 
       if (message) {
         toast({
-          title: "Error",
+          title: "錯誤",
           description: message as string,
         });
         return;
@@ -94,8 +94,8 @@ export function EditGameSheet({
       form.reset();
       props.onOpenChange?.(false);
       toast({
-        title: "Success",
-        description: "Member Updated!",
+        title: "成功",
+        description: "數據已更新！",
       });
     });
   }
