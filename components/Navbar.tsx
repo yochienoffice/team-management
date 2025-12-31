@@ -65,11 +65,7 @@ export default function Navbar() {
   useEffect(() => {
     function directToLoginPage() {
       if (pathname === "/") {
-        if (localStorage.getItem("token") != "") {
-          router.push("/team-overview");
-        } else {
-          router.push("/login");
-        }
+        router.push("/team-overview");
       }
     }
 
